@@ -1,0 +1,81 @@
+{
+  "model": "ovm",
+  "follower_make": "Audi A6",
+  "leader_make": "Audi A8",
+  "follower_position": 2,
+  "distance_setting": "min",
+  "run": "040719_platoon5",
+  "pair_id": "040719_platoon5_f2",
+  "dt": 0.10000000000000009,
+  "split": {
+    "train_frac": 0.7,
+    "n": 12470,
+    "n_train": 8729,
+    "n_heldout": 3741,
+    "split_index": 8729,
+    "n_cp_train": 117,
+    "n_cp_heldout": 61
+  },
+  "theta_sample": {
+    "kappa": 0.1396035547024692,
+    "v_max": 31.446605960515978,
+    "s_c": 18.74174611494911,
+    "w": 11.895108110560193
+  },
+  "theta_phase": {
+    "kappa": 0.14103619401947376,
+    "v_max": 32.13196453499737,
+    "s_c": 18.459657994888467,
+    "w": 14.266016137907267
+  },
+  "eval": {
+    "sample": {
+      "train": {
+        "rmse_full_m": 2.2504500872473634,
+        "rmse_cp_m": 3.747479270262278,
+        "n_barrier": 0
+      },
+      "heldout": {
+        "rmse_full_m": 2.346327333225703,
+        "rmse_cp_m": 3.42739783003839,
+        "n_barrier": 56
+      }
+    },
+    "phase": {
+      "train": {
+        "rmse_full_m": 2.3545635646015395,
+        "rmse_cp_m": 3.6327266687116055,
+        "n_barrier": 0
+      },
+      "heldout": {
+        "rmse_full_m": 2.5822843594778493,
+        "rmse_cp_m": 3.5357315719935762,
+        "n_barrier": 61
+      }
+    }
+  },
+  "bounds": {
+    "kappa": [
+      0.1,
+      3.0
+    ],
+    "v_max": [
+      5.0,
+      50.0
+    ],
+    "s_c": [
+      2.0,
+      40.0
+    ],
+    "w": [
+      1.0,
+      50.0
+    ]
+  },
+  "de": {
+    "maxiter": 150,
+    "popsize": 15,
+    "seed": 42,
+    "polish": false
+  }
+}

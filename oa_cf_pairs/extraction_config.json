@@ -1,0 +1,14 @@
+{
+  "input": "OpenACC/AstaZero",
+  "output_dir": "oa_cf_pairs",
+  "pattern": "ASta_*platoon*.csv",
+  "runs": null,
+  "leader_length": 0.0,
+  "accel_smooth": 1,
+  "trim_standstill": false,
+  "standstill_speed": 0.3,
+  "min_gap": 0.3,
+  "dt": null,
+  "manifest_name": "manifest.csv",
+  "self_test": false
+}

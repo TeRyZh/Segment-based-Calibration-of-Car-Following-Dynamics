@@ -1,0 +1,81 @@
+{
+  "model": "ovm",
+  "follower_make": "Tesla Model3",
+  "leader_make": "Mercedes AClass",
+  "follower_position": 5,
+  "distance_setting": "min",
+  "run": "040719_platoon5",
+  "pair_id": "040719_platoon5_f5",
+  "dt": 0.10000000000000009,
+  "split": {
+    "train_frac": 0.7,
+    "n": 12470,
+    "n_train": 8729,
+    "n_heldout": 3741,
+    "split_index": 8729,
+    "n_cp_train": 220,
+    "n_cp_heldout": 99
+  },
+  "theta_sample": {
+    "kappa": 0.31515421295924284,
+    "v_max": 34.83330483674649,
+    "s_c": 21.275708463344134,
+    "w": 13.77238668103963
+  },
+  "theta_phase": {
+    "kappa": 0.29190094807911926,
+    "v_max": 35.150469997617954,
+    "s_c": 21.931526034431403,
+    "w": 14.067353513933659
+  },
+  "eval": {
+    "sample": {
+      "train": {
+        "rmse_full_m": 4.592083639197483,
+        "rmse_cp_m": 4.877260081622023,
+        "n_barrier": 0
+      },
+      "heldout": {
+        "rmse_full_m": 3.4468591109875466,
+        "rmse_cp_m": 4.047014823449074,
+        "n_barrier": 4
+      }
+    },
+    "phase": {
+      "train": {
+        "rmse_full_m": 4.629258475223127,
+        "rmse_cp_m": 4.834225168548452,
+        "n_barrier": 0
+      },
+      "heldout": {
+        "rmse_full_m": 3.58722080289323,
+        "rmse_cp_m": 4.144008123954868,
+        "n_barrier": 3
+      }
+    }
+  },
+  "bounds": {
+    "kappa": [
+      0.1,
+      3.0
+    ],
+    "v_max": [
+      5.0,
+      50.0
+    ],
+    "s_c": [
+      2.0,
+      40.0
+    ],
+    "w": [
+      1.0,
+      50.0
+    ]
+  },
+  "de": {
+    "maxiter": 150,
+    "popsize": 15,
+    "seed": 42,
+    "polish": false
+  }
+}

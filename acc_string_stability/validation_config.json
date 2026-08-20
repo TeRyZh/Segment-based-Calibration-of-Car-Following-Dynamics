@@ -1,0 +1,22 @@
+{
+  "pairs_dir": "oa_cf_pairs",
+  "calib_dir": "acc_calib_ovm_run7",
+  "output_dir": "acc_string_stability",
+  "which": "both",
+  "run": "040719_platoon7",
+  "manifest_name": "manifest.csv",
+  "only": null,
+  "window": 120.0,
+  "platoon_warmup_sec": 15.0,
+  "hysteresis": false,
+  "speed_bin": 1.0,
+  "min_count": 5,
+  "smooth": 5,
+  "penalty": 75.0,
+  "min_seg": 20,
+  "cusum_threshold": 2.1,
+  "cusum_drift": 0.3,
+  "cp_tol": 0.5,
+  "phase_window": 60.0,
+  "self_test": false
+}

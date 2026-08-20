@@ -1,0 +1,87 @@
+{
+  "model": "idm",
+  "follower_make": "Audi A6",
+  "leader_make": "BMW X5",
+  "follower_position": 4,
+  "distance_setting": "min",
+  "run": "040719_platoon7",
+  "pair_id": "040719_platoon7_f4",
+  "dt": 0.10000000000000009,
+  "split": {
+    "train_frac": 0.7,
+    "n": 9227,
+    "n_train": 6459,
+    "n_heldout": 2768,
+    "split_index": 6459,
+    "n_cp_train": 129,
+    "n_cp_heldout": 79
+  },
+  "theta_sample": {
+    "v0": 56.756742936870985,
+    "T": 0.8877890536904781,
+    "a_max": 1.5265747943778816,
+    "b": 14.999967521961475,
+    "s0": 4.810609162191045
+  },
+  "theta_phase": {
+    "v0": 68.28032103233105,
+    "T": 0.9236376382108353,
+    "a_max": 1.5440175091814843,
+    "b": 14.999985187798721,
+    "s0": 4.74922958754363
+  },
+  "eval": {
+    "sample": {
+      "train": {
+        "rmse_full_m": 1.9870150621747706,
+        "rmse_cp_m": 2.7492394141010816,
+        "n_barrier": 0
+      },
+      "heldout": {
+        "rmse_full_m": 2.2646254974502864,
+        "rmse_cp_m": 2.6348921291115754,
+        "n_barrier": 0
+      }
+    },
+    "phase": {
+      "train": {
+        "rmse_full_m": 2.0482901574287773,
+        "rmse_cp_m": 2.7078916023586928,
+        "n_barrier": 0
+      },
+      "heldout": {
+        "rmse_full_m": 2.2781760047824697,
+        "rmse_cp_m": 2.592179910514748,
+        "n_barrier": 0
+      }
+    }
+  },
+  "bounds": {
+    "v0": [
+      5.0,
+      120.0
+    ],
+    "T": [
+      0.2,
+      3.0
+    ],
+    "a_max": [
+      0.2,
+      4.0
+    ],
+    "b": [
+      0.2,
+      15.0
+    ],
+    "s0": [
+      0.1,
+      8.0
+    ]
+  },
+  "de": {
+    "maxiter": 80,
+    "popsize": 15,
+    "seed": 42,
+    "polish": false
+  }
+}

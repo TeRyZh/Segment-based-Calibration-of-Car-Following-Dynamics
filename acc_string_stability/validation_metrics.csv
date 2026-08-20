@@ -1,0 +1,9 @@
+pair_id,follower_make,follower_position,objective,rmse_spacing_m,peak_decel_ms2,hyst_width_obs_m,hyst_width_sim_m,n_barrier
+040719_platoon7_f2,Tesla Model3,2,sample,3.2728984921415596,-1.6723835846098558,,,17
+040719_platoon7_f2,Tesla Model3,2,segment,3.5621923878186728,-1.7312889338656496,,,47
+040719_platoon7_f3,BMW X5,3,sample,2.212246499105603,-2.3408328573810944,,,58
+040719_platoon7_f3,BMW X5,3,segment,2.381822003065546,-2.302030805868579,,,68
+040719_platoon7_f4,Audi A6,4,sample,4.059600689369708,-3.2581142240531378,,,42
+040719_platoon7_f4,Audi A6,4,segment,4.307454722912659,-3.173276716631367,,,37
+040719_platoon7_f5,Mercedes AClass,5,sample,3.400210375287658,-4.0,,,11
+040719_platoon7_f5,Mercedes AClass,5,segment,3.420148667710448,-4.0,,,13

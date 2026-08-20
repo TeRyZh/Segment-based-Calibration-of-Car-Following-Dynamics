@@ -1,0 +1,81 @@
+{
+  "model": "ovm",
+  "follower_make": "Tesla Model3",
+  "leader_make": "Audi A8",
+  "follower_position": 2,
+  "distance_setting": "min",
+  "run": "040719_platoon7",
+  "pair_id": "040719_platoon7_f2",
+  "dt": 0.10000000000000009,
+  "split": {
+    "train_frac": 0.7,
+    "n": 9227,
+    "n_train": 6459,
+    "n_heldout": 2768,
+    "split_index": 6459,
+    "n_cp_train": 85,
+    "n_cp_heldout": 62
+  },
+  "theta_sample": {
+    "kappa": 0.3400540523801465,
+    "v_max": 46.16538875699574,
+    "s_c": 24.197038953454232,
+    "w": 20.07872136649428
+  },
+  "theta_phase": {
+    "kappa": 0.28368073971196606,
+    "v_max": 49.999331772473134,
+    "s_c": 18.46793520498271,
+    "w": 35.37133860699114
+  },
+  "eval": {
+    "sample": {
+      "train": {
+        "rmse_full_m": 2.525758036842691,
+        "rmse_cp_m": 3.697699255377701,
+        "n_barrier": 0
+      },
+      "heldout": {
+        "rmse_full_m": 3.2728984921415596,
+        "rmse_cp_m": 4.0854746293579005,
+        "n_barrier": 17
+      }
+    },
+    "phase": {
+      "train": {
+        "rmse_full_m": 2.941198247974897,
+        "rmse_cp_m": 3.3027950662092764,
+        "n_barrier": 1
+      },
+      "heldout": {
+        "rmse_full_m": 3.5621923878186728,
+        "rmse_cp_m": 3.8917627287867718,
+        "n_barrier": 47
+      }
+    }
+  },
+  "bounds": {
+    "kappa": [
+      0.1,
+      3.0
+    ],
+    "v_max": [
+      5.0,
+      50.0
+    ],
+    "s_c": [
+      2.0,
+      40.0
+    ],
+    "w": [
+      1.0,
+      50.0
+    ]
+  },
+  "de": {
+    "maxiter": 150,
+    "popsize": 15,
+    "seed": 42,
+    "polish": false
+  }
+}

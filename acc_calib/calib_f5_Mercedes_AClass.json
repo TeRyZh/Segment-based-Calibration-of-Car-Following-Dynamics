@@ -1,0 +1,87 @@
+{
+  "model": "idm",
+  "follower_make": "Mercedes AClass",
+  "leader_make": "Audi A6",
+  "follower_position": 5,
+  "distance_setting": "min",
+  "run": "040719_platoon7",
+  "pair_id": "040719_platoon7_f5",
+  "dt": 0.10000000000000009,
+  "split": {
+    "train_frac": 0.7,
+    "n": 9227,
+    "n_train": 6459,
+    "n_heldout": 2768,
+    "split_index": 6459,
+    "n_cp_train": 153,
+    "n_cp_heldout": 88
+  },
+  "theta_sample": {
+    "v0": 55.43523723996445,
+    "T": 0.8864540657672345,
+    "a_max": 1.7861876365831393,
+    "b": 14.999927619541266,
+    "s0": 4.362904742628443
+  },
+  "theta_phase": {
+    "v0": 58.227886742862026,
+    "T": 0.8879889766303576,
+    "a_max": 1.7924548756720589,
+    "b": 14.999951771378944,
+    "s0": 4.2779897397132585
+  },
+  "eval": {
+    "sample": {
+      "train": {
+        "rmse_full_m": 1.8602045922144312,
+        "rmse_cp_m": 2.191689747702385,
+        "n_barrier": 0
+      },
+      "heldout": {
+        "rmse_full_m": 2.431570154746525,
+        "rmse_cp_m": 2.5099132438052587,
+        "n_barrier": 0
+      }
+    },
+    "phase": {
+      "train": {
+        "rmse_full_m": 1.869718798859557,
+        "rmse_cp_m": 2.180311581072552,
+        "n_barrier": 0
+      },
+      "heldout": {
+        "rmse_full_m": 2.5137928226561677,
+        "rmse_cp_m": 2.587842708165105,
+        "n_barrier": 0
+      }
+    }
+  },
+  "bounds": {
+    "v0": [
+      5.0,
+      120.0
+    ],
+    "T": [
+      0.2,
+      3.0
+    ],
+    "a_max": [
+      0.2,
+      4.0
+    ],
+    "b": [
+      0.2,
+      15.0
+    ],
+    "s0": [
+      0.1,
+      8.0
+    ]
+  },
+  "de": {
+    "maxiter": 80,
+    "popsize": 15,
+    "seed": 42,
+    "polish": false
+  }
+}

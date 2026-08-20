@@ -1,0 +1,132 @@
+{
+  "config": {
+    "model": "gipps",
+    "features": [
+      "s_end",
+      "dist",
+      "phase_speed_ols"
+    ],
+    "maxiter": 60,
+    "popsize": 15,
+    "seed": 42,
+    "units": "feet",
+    "delta_abs": 0.5,
+    "delta_rel": 0.05,
+    "gate": "and",
+    "n_train": 100,
+    "n_test": 20,
+    "protocol": "pooled calibration -> held-out free-sim; primary metric spacing RMSE (position-level); phase faces non-inferiority bar on it"
+  },
+  "theta": {
+    "phase": {
+      "a": 1.2467981030374118,
+      "V": 15.54915126661188,
+      "tau": 1.2594157633504273,
+      "b": 2.7575104477933396,
+      "b_hat": 2.0,
+      "s0": 1.5
+    },
+    "sample_spacing": {
+      "a": 1.3429598293591951,
+      "V": 34.232852112410264,
+      "tau": 1.288777568982078,
+      "b": 2.2423325796283513,
+      "b_hat": 2.0,
+      "s0": 1.9032279326017694
+    },
+    "sample_speed": {
+      "a": 1.4235317847947708,
+      "V": 15.0,
+      "tau": 1.455933399514567,
+      "b": 2.367160378256897,
+      "b_hat": 2.0,
+      "s0": 1.5
+    }
+  },
+  "test_aggregate": {
+    "phase": {
+      "label": "phase",
+      "n_pairs": 20,
+      "spacing_rmse_mean": 3.1688457548304165,
+      "spacing_rmse_median": 2.824768405925891,
+      "spacing_mae_mean": 2.5397949097748436,
+      "spacing_rmspe_mean": 0.33324420352027395,
+      "pos_rmse_mean": 3.168845754830417,
+      "speed_rmse_mean": 0.6284565189137898,
+      "spacing_rmse_pooled": 3.572698172710698,
+      "collision_free_frac": 1.0,
+      "pairs_with_barrier": 0
+    },
+    "sample_spacing": {
+      "label": "sample_spacing",
+      "n_pairs": 20,
+      "spacing_rmse_mean": 3.7298151331760643,
+      "spacing_rmse_median": 3.6808926031294176,
+      "spacing_mae_mean": 3.0930099016062877,
+      "spacing_rmspe_mean": 0.4270769084601527,
+      "pos_rmse_mean": 3.7298151331760643,
+      "speed_rmse_mean": 0.6345324501844262,
+      "spacing_rmse_pooled": 3.9818160642454763,
+      "collision_free_frac": 1.0,
+      "pairs_with_barrier": 0
+    },
+    "sample_speed": {
+      "label": "sample_speed",
+      "n_pairs": 20,
+      "spacing_rmse_mean": 3.993587160679182,
+      "spacing_rmse_median": 3.511476101668006,
+      "spacing_mae_mean": 3.323907626067515,
+      "spacing_rmspe_mean": 0.46453423386585824,
+      "pos_rmse_mean": 3.993587160679182,
+      "speed_rmse_mean": 0.6418922378541656,
+      "spacing_rmse_pooled": 4.265951732778814,
+      "collision_free_frac": 1.0,
+      "pairs_with_barrier": 0
+    }
+  },
+  "paired_primary_phase_vs_sample_spacing": {
+    "metric": "spacing_rmse",
+    "n_pairs": 20,
+    "A_mean": 3.1688457548304165,
+    "B_mean": 3.7298151331760643,
+    "diff_mean": -0.560969378345648,
+    "diff_median": -0.7882770452697325,
+    "diff_ci95": [
+      -1.1799381919937832,
+      0.08069809258060029
+    ],
+    "A_better_frac": 0.65,
+    "wilcoxon_stat": 64.0,
+    "wilcoxon_p": 0.13272666931152344,
+    "noninferiority": {
+      "gate": "and",
+      "verdicts": {
+        "abs": {
+          "margin": 0.5,
+          "noninferior": true
+        },
+        "rel": {
+          "delta_rel": 0.05,
+          "margin": 0.18649075665880321,
+          "noninferior": true
+        }
+      },
+      "noninferior": true
+    }
+  },
+  "paired_contrast_spacing_vs_speed": {
+    "metric": "spacing_rmse",
+    "n_pairs": 20,
+    "A_mean": 3.7298151331760643,
+    "B_mean": 3.993587160679182,
+    "diff_mean": -0.263772027503116,
+    "diff_median": -0.3081320307944184,
+    "diff_ci95": [
+      -0.415936087222324,
+      -0.0927630248253966
+    ],
+    "A_better_frac": 0.85,
+    "wilcoxon_stat": 35.0,
+    "wilcoxon_p": 0.0072956085205078125
+  }
+}

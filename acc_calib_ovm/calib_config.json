@@ -1,0 +1,21 @@
+{
+  "input": "oa_cf_pairs",
+  "output_dir": "acc_calib_ovm",
+  "model": "ovm",
+  "objective": "both",
+  "run": "platoon5",
+  "train_frac": 0.7,
+  "manifest_name": "manifest.csv",
+  "only": null,
+  "penalty": 50.0,
+  "min_seg": 20,
+  "cusum_threshold": 2,
+  "cusum_drift": 0.3,
+  "maxiter": 150,
+  "popsize": 15,
+  "seed": 42,
+  "tol": 1e-06,
+  "workers": -1,
+  "collision_penalty": 5.0,
+  "self_test": false
+}

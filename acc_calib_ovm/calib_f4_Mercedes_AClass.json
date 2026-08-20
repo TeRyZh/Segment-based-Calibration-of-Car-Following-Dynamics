@@ -1,0 +1,81 @@
+{
+  "model": "ovm",
+  "follower_make": "Mercedes AClass",
+  "leader_make": "BMW X5",
+  "follower_position": 4,
+  "distance_setting": "min",
+  "run": "040719_platoon5",
+  "pair_id": "040719_platoon5_f4",
+  "dt": 0.10000000000000009,
+  "split": {
+    "train_frac": 0.7,
+    "n": 12470,
+    "n_train": 8729,
+    "n_heldout": 3741,
+    "split_index": 8729,
+    "n_cp_train": 206,
+    "n_cp_heldout": 92
+  },
+  "theta_sample": {
+    "kappa": 0.23512139025015366,
+    "v_max": 33.97879221129949,
+    "s_c": 17.746812840164594,
+    "w": 16.366752292750036
+  },
+  "theta_phase": {
+    "kappa": 0.22407167066744504,
+    "v_max": 34.548981040468135,
+    "s_c": 17.9197684547966,
+    "w": 17.39960915301365
+  },
+  "eval": {
+    "sample": {
+      "train": {
+        "rmse_full_m": 2.8230077093388597,
+        "rmse_cp_m": 3.101645445076776,
+        "n_barrier": 2
+      },
+      "heldout": {
+        "rmse_full_m": 3.136726633881801,
+        "rmse_cp_m": 3.7067140257569684,
+        "n_barrier": 45
+      }
+    },
+    "phase": {
+      "train": {
+        "rmse_full_m": 2.8448841675896244,
+        "rmse_cp_m": 3.0691655875662907,
+        "n_barrier": 2
+      },
+      "heldout": {
+        "rmse_full_m": 3.087111531221968,
+        "rmse_cp_m": 3.5626101249781446,
+        "n_barrier": 50
+      }
+    }
+  },
+  "bounds": {
+    "kappa": [
+      0.1,
+      3.0
+    ],
+    "v_max": [
+      5.0,
+      50.0
+    ],
+    "s_c": [
+      2.0,
+      40.0
+    ],
+    "w": [
+      1.0,
+      50.0
+    ]
+  },
+  "de": {
+    "maxiter": 150,
+    "popsize": 15,
+    "seed": 42,
+    "polish": false
+  }
+}
